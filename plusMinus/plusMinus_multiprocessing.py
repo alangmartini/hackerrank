@@ -2,6 +2,7 @@ import multiprocessing as mp
 from ..utils import time_execution, memory_usage
 from functools import partial
 
+
 def count_values(condition, arr):
     return sum(1 for n in arr if condition(n))
 
@@ -41,6 +42,6 @@ def plusMinus(arr):
 
 
 if __name__ == "__main__":
-    #freeze_suport()
+    # freeze_suport()
     arr = [-4, 3, -9, 0, 4, 1]
     plusMinus(arr)
